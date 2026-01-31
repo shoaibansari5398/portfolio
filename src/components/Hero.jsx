@@ -62,23 +62,6 @@ const Hero = () => {
           </a>
         </motion.div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 1 }}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-      >
-        <span className="text-xs tracking-[0.2em] uppercase text-japandi-taupe">Scroll</span>
-        <div className="w-px h-12 bg-japandi-beige relative overflow-hidden">
-          <motion.div
-            animate={{ y: [0, 48, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute top-0 left-0 w-full h-1/2 bg-japandi-sage"
-          />
-        </div>
-      </motion.div>
     </section>
   );
 };
