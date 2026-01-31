@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden bg-japandi-white">
+    <section className="min-h-[70vh] flex items-center justify-center pt-20 pb-16 relative overflow-hidden bg-japandi-white">
       {/* Subtle Background Elements */}
       <div className="absolute top-40 right-20 w-64 h-64 bg-japandi-sage/5 rounded-full blur-3xl" />
       <div className="absolute bottom-40 left-20 w-48 h-48 bg-japandi-terracotta/5 rounded-full blur-3xl" />
@@ -42,25 +42,6 @@ const Hero = () => {
           Specializing in enhancing system reliability, critical PI releases, and rapid technical upskilling.
         </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
-          <a
-            href="#projects"
-            className="px-8 py-4 bg-japandi-charcoal text-japandi-white font-medium hover:bg-japandi-black transition-colors duration-300 w-full sm:w-auto tracking-wide"
-          >
-            View Projects
-          </a>
-          <a
-            href="#contact"
-            className="px-8 py-4 border border-japandi-charcoal text-japandi-charcoal font-medium hover:bg-japandi-charcoal hover:text-japandi-white transition-all duration-300 w-full sm:w-auto tracking-wide"
-          >
-            Contact Me
-          </a>
-        </motion.div>
       </div>
     </section>
   );
